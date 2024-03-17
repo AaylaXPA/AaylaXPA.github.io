@@ -1,0 +1,109 @@
+body {
+    background-color: #000;
+    background-image: url('../img/background.webp');
+    background-size: cover;
+    width: 100vw;
+    width: 100dvw;
+    height: 100vh;
+    height: 100dvh;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    width: 100dvw;
+    height: 100vh;
+    height: 100dvh;
+}
+
+.background {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: opacity 100ms;
+    opacity: .4;
+}
+
+.background.active {
+    display: block;
+}
+
+.card {
+    border: 1px solid transparent;
+    color: #fff;
+    text-align: center;
+    padding: 2em;
+    width: min-content;
+    gap: 1em;
+    background-color: transparent;
+    transition: all 1s;
+}
+
+.card:hover {
+    box-shadow: 0 0 1em #ccc;
+}
+
+.card i {
+    color: #fff;
+}
+
+.card .photo img {
+    width: 122px;
+    border-radius: 100%;
+    border: 3px solid #fff;
+}
+
+.card .name {
+    font-size: 1.5em;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.card .contact {
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+    white-space: nowrap;
+    font-size: .8em;
+    color: #aaa;
+}
+
+.card .contact i {
+    margin: 0 .5em;
+}
+
+.card .contact a {
+    text-decoration: none;
+    color: #aaa;
+}
+
+.card .contact .email:hover {
+    text-decoration: underline;
+}
+
+.card .description {
+    font-weight: 600;
+}
+
+.card .links {
+    justify-content: center;
+    gap: 1em;
+    font-size: 1.2em;
+}
+
+.card .links .link {
+    transition: all .5s;
+    border: 1px solid transparent;
+    border-radius: .3em;
+}
+
+.card .links .link i {
+    padding: .2em;
+}
+
+.card .links .link:hover {
+    border: 1px solid #fff;
+}
